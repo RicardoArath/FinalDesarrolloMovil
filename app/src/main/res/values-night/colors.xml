@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material 3 branded palette en versión oscura -->
+    <color name="md_primary">#A2C9FF</color>
+    <color name="md_on_primary">#003258</color>
+    <color name="md_primary_container">#0F477E</color>
+    <color name="md_on_primary_container">#D3E4FD</color>
+    <color name="md_secondary">#BBC7DB</color>
+    <color name="md_on_secondary">#253141</color>
+    <color name="md_secondary_container">#3C4858</color>
+    <color name="md_on_secondary_container">#D7E3F8</color>
+    <color name="md_tertiary">#D6BEE4</color>
+    <color name="md_on_tertiary">#3B2948</color>
+    <color name="md_tertiary_container">#523F5F</color>
+    <color name="md_on_tertiary_container">#F2DAFF</color>
+    <color name="md_error">#FFB4AB</color>
+    <color name="md_on_error">#690005</color>
+    <color name="md_error_container">#93000A</color>
+    <color name="md_on_error_container">#FFDAD6</color>
+    <color name="md_background">#1A1C1E</color>
+    <color name="md_on_background">#E2E2E6</color>
+    <color name="md_surface">#1A1C1E</color>
+    <color name="md_on_surface">#E2E2E6</color>
+    <color name="md_surface_variant">#43474E</color>
+    <color name="md_on_surface_variant">#C3C7CF</color>
+    <color name="md_outline">#8D9199</color>
+    <color name="md_outline_variant">#43474E</color>
+
+    <!-- Status colors — tonos más claros sobre dark surface -->
+    <color name="status_rented">#81C784</color>
+    <color name="status_rented_bg">#1B3A1E</color>
+    <color name="status_available">#B0BEC5</color>
+    <color name="status_available_bg">#2C2F31</color>
+    <color name="status_expiring">#FFB74D</color>
+    <color name="status_expiring_bg">#3D2912</color>
+    <color name="status_expired">#EF5350</color>
+    <color name="status_expired_bg">#3D1A1A</color>
+
+    <!-- Priority -->
+    <color name="priority_urgent">#EF5350</color>
+    <color name="priority_urgent_bg">#3D1A1A</color>
+    <color name="priority_high">#FFB74D</color>
+    <color name="priority_high_bg">#3D2912</color>
+    <color name="priority_medium">#FFCA28</color>
+    <color name="priority_medium_bg">#3D3315</color>
+    <color name="priority_low">#B0BEC5</color>
+    <color name="priority_low_bg">#2C2F31</color>
+
+    <!-- Payment -->
+    <color name="payment_on_time">#81C784</color>
+    <color name="payment_on_time_bg">#1B3A1E</color>
+    <color name="payment_late">#EF5350</color>
+    <color name="payment_late_bg">#3D1A1A</color>
+
+    <!-- Maintenance -->
+    <color name="maintenance_pending">#64B5F6</color>
+    <color name="maintenance_pending_bg">#13294B</color>
+    <color name="maintenance_in_progress">#FFB74D</color>
+    <color name="maintenance_in_progress_bg">#3D2912</color>
+    <color name="maintenance_completed">#81C784</color>
+    <color name="maintenance_completed_bg">#1B3A1E</color>
+</resources>

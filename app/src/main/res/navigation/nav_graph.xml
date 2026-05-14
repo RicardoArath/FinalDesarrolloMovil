@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <!-- Dashboard -->
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.rentflowmax.ui.dashboard.DashboardFragment"
+        android:label="@string/nav_dashboard"
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/action_dashboard_to_contractDetail"
+            app:destination="@id/contractDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <!-- Properties -->
+    <fragment
+        android:id="@+id/propertyListFragment"
+        android:name="com.example.rentflowmax.ui.properties.PropertyListFragment"
+        android:label="@string/nav_properties"
+        tools:layout="@layout/fragment_property_list">
+        <action
+            android:id="@+id/action_propertyList_to_propertyDetail"
+            app:destination="@id/propertyDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_propertyList_to_propertyForm"
+            app:destination="@id/propertyFormFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/propertyDetailFragment"
+        android:name="com.example.rentflowmax.ui.properties.PropertyDetailFragment"
+        android:label="@string/nav_properties"
+        tools:layout="@layout/fragment_property_detail">
+        <argument
+            android:name="propertyId"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_propertyDetail_to_propertyForm"
+            app:destination="@id/propertyFormFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_propertyDetail_to_contractForm"
+            app:destination="@id/contractFormFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_propertyDetail_to_contractDetail"
+            app:destination="@id/contractDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_propertyDetail_to_maintenanceDetail"
+            app:destination="@id/maintenanceDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/propertyFormFragment"
+        android:name="com.example.rentflowmax.ui.properties.PropertyFormFragment"
+        android:label="@string/property_add"
+        tools:layout="@layout/fragment_property_form">
+        <argument
+            android:name="propertyId"
+            app:argType="long"
+            android:defaultValue="-1L" />
+    </fragment>
+
+    <!-- Tenants -->
+    <fragment
+        android:id="@+id/tenantListFragment"
+        android:name="com.example.rentflowmax.ui.tenants.TenantListFragment"
+        android:label="@string/nav_tenants"
+        tools:layout="@layout/fragment_tenant_list">
+        <action
+            android:id="@+id/action_tenantList_to_tenantDetail"
+            app:destination="@id/tenantDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_tenantList_to_tenantForm"
+            app:destination="@id/tenantFormFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/tenantDetailFragment"
+        android:name="com.example.rentflowmax.ui.tenants.TenantDetailFragment"
+        android:label="@string/nav_tenants"
+        tools:layout="@layout/fragment_tenant_detail">
+        <argument
+            android:name="tenantId"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_tenantDetail_to_tenantForm"
+            app:destination="@id/tenantFormFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_tenantDetail_to_contractDetail"
+            app:destination="@id/contractDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_tenantDetail_to_contractForm"
+            app:destination="@id/contractFormFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/tenantFormFragment"
+        android:name="com.example.rentflowmax.ui.tenants.TenantFormFragment"
+        android:label="@string/tenant_add"
+        tools:layout="@layout/fragment_tenant_form">
+        <argument
+            android:name="tenantId"
+            app:argType="long"
+            android:defaultValue="-1L" />
+    </fragment>
+
+    <!-- Contracts (no bottom nav tab, accessed from property/tenant detail) -->
+    <fragment
+        android:id="@+id/contractListFragment"
+        android:name="com.example.rentflowmax.ui.contracts.ContractListFragment"
+        android:label="@string/contracts_title"
+        tools:layout="@layout/fragment_contract_list">
+        <action
+            android:id="@+id/action_contractList_to_contractDetail"
+            app:destination="@id/contractDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_contractList_to_contractForm"
+            app:destination="@id/contractFormFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/contractDetailFragment"
+        android:name="com.example.rentflowmax.ui.contracts.ContractDetailFragment"
+        android:label="@string/contracts_title"
+        tools:layout="@layout/fragment_contract_detail">
+        <argument
+            android:name="contractId"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_contractDetail_to_contractForm"
+            app:destination="@id/contractFormFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_contractDetail_to_paymentForm"
+            app:destination="@id/paymentFormFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/contractFormFragment"
+        android:name="com.example.rentflowmax.ui.contracts.ContractFormFragment"
+        android:label="@string/contract_add"
+        tools:layout="@layout/fragment_contract_form">
+        <argument
+            android:name="contractId"
+            app:argType="long"
+            android:defaultValue="-1L" />
+        <argument
+            android:name="preselectedPropertyId"
+            app:argType="long"
+            android:defaultValue="-1L" />
+        <argument
+            android:name="preselectedTenantId"
+            app:argType="long"
+            android:defaultValue="-1L" />
+        <action
+            android:id="@+id/action_contractForm_to_propertyForm"
+            app:destination="@id/propertyFormFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_contractForm_to_tenantForm"
+            app:destination="@id/tenantFormFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <!-- Payments -->
+    <fragment
+        android:id="@+id/paymentListFragment"
+        android:name="com.example.rentflowmax.ui.payments.PaymentListFragment"
+        android:label="@string/nav_payments"
+        tools:layout="@layout/fragment_payment_list">
+        <action
+            android:id="@+id/action_paymentList_to_paymentForm"
+            app:destination="@id/paymentFormFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_paymentList_to_contractDetail"
+            app:destination="@id/contractDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/paymentFormFragment"
+        android:name="com.example.rentflowmax.ui.payments.PaymentFormFragment"
+        android:label="@string/payment_add"
+        tools:layout="@layout/fragment_payment_form">
+        <argument
+            android:name="paymentId"
+            app:argType="long"
+            android:defaultValue="-1L" />
+        <argument
+            android:name="preselectedContractId"
+            app:argType="long"
+            android:defaultValue="-1L" />
+        <action
+            android:id="@+id/action_paymentForm_to_contractList"
+            app:destination="@id/contractListFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <!-- Maintenance -->
+    <fragment
+        android:id="@+id/maintenanceListFragment"
+        android:name="com.example.rentflowmax.ui.maintenance.MaintenanceListFragment"
+        android:label="@string/nav_maintenance"
+        tools:layout="@layout/fragment_maintenance_list">
+        <action
+            android:id="@+id/action_maintenanceList_to_maintenanceDetail"
+            app:destination="@id/maintenanceDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_maintenanceList_to_maintenanceForm"
+            app:destination="@id/maintenanceFormFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/maintenanceDetailFragment"
+        android:name="com.example.rentflowmax.ui.maintenance.MaintenanceDetailFragment"
+        android:label="@string/maintenance_title"
+        tools:layout="@layout/fragment_maintenance_detail">
+        <argument
+            android:name="maintenanceId"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_maintenanceDetail_to_maintenanceForm"
+            app:destination="@id/maintenanceFormFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/maintenanceFormFragment"
+        android:name="com.example.rentflowmax.ui.maintenance.MaintenanceFormFragment"
+        android:label="@string/maintenance_add"
+        tools:layout="@layout/fragment_maintenance_form">
+        <argument
+            android:name="maintenanceId"
+            app:argType="long"
+            android:defaultValue="-1L" />
+        <argument
+            android:name="preselectedPropertyId"
+            app:argType="long"
+            android:defaultValue="-1L" />
+        <action
+            android:id="@+id/action_maintenanceForm_to_propertyForm"
+            app:destination="@id/propertyFormFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+</navigation>

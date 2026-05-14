@@ -1,0 +1,206 @@
+<resources>
+    <string name="app_name">RentFlowMax</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_dashboard">Inicio</string>
+    <string name="nav_properties">Propiedades</string>
+    <string name="nav_tenants">Inquilinos</string>
+    <string name="nav_payments">Pagos</string>
+    <string name="nav_maintenance">Mantenimiento</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_title">Resumen</string>
+    <string name="dashboard_rented_properties">Propiedades rentadas</string>
+    <string name="dashboard_available_properties">Disponibles</string>
+    <string name="dashboard_monthly_income">Ingresos del mes</string>
+    <string name="dashboard_expiring_contracts">Contratos por vencer</string>
+    <string name="dashboard_pending_maintenance">Mantenimientos pendientes</string>
+    <string name="dashboard_next_30_days">Próximos 30 días</string>
+    <string name="dashboard_no_expiring">Sin contratos por vencer</string>
+    <string name="dashboard_no_maintenance">Sin mantenimientos pendientes</string>
+
+    <!-- Properties -->
+    <string name="properties_title">Propiedades</string>
+    <string name="property_add">Nueva Propiedad</string>
+    <string name="property_edit">Editar Propiedad</string>
+    <string name="property_name">Nombre</string>
+    <string name="property_address">Dirección</string>
+    <string name="property_type">Tipo</string>
+    <string name="property_monthly_rent">Renta mensual</string>
+    <string name="property_description">Descripción</string>
+    <string name="property_status_rented">Rentada hasta %s</string>
+    <string name="property_status_available">Disponible</string>
+    <string name="property_current_period">Período de Renta Actual</string>
+    <string name="property_no_active_contract">Sin contrato activo</string>
+    <string name="property_create_contract">Crear Contrato</string>
+    <string name="property_contract_history">Historial de Contratos</string>
+    <string name="property_maintenance_list">Mantenimientos</string>
+    <string name="property_delete_confirm">¿Eliminar esta propiedad?</string>
+    <string name="property_empty">Sin propiedades registradas</string>
+
+    <!-- Property Types -->
+    <string name="type_apartment">Apartamento</string>
+    <string name="type_house">Casa</string>
+    <string name="type_commercial">Local Comercial</string>
+    <string name="type_warehouse">Bodega</string>
+    <string name="type_office">Oficina</string>
+
+    <!-- Tenants -->
+    <string name="tenants_title">Inquilinos</string>
+    <string name="tenant_add">Nuevo Inquilino</string>
+    <string name="tenant_edit">Editar Inquilino</string>
+    <string name="tenant_first_name">Nombre(s)</string>
+    <string name="tenant_last_name">Apellido(s)</string>
+    <string name="tenant_email">Correo electrónico</string>
+    <string name="tenant_phone">Teléfono</string>
+    <string name="tenant_id_number">Cédula / RFC</string>
+    <string name="tenant_emergency_contact">Contacto de emergencia</string>
+    <string name="tenant_emergency_phone">Teléfono de emergencia</string>
+    <string name="tenant_active_contract">Contrato activo</string>
+    <string name="tenant_no_contracts">Sin contratos</string>
+    <string name="tenant_contracts_section">Contratos</string>
+    <string name="tenant_delete_confirm">¿Eliminar este inquilino?</string>
+    <string name="tenant_empty">Sin inquilinos registrados</string>
+
+    <!-- Contracts -->
+    <string name="contracts_title">Contratos</string>
+    <string name="contract_add">Nuevo Contrato</string>
+    <string name="contract_edit">Editar Contrato</string>
+    <string name="contract_property">Propiedad</string>
+    <string name="contract_tenant">Inquilino</string>
+    <string name="contract_start_date">Fecha de inicio</string>
+    <string name="contract_end_date">Fecha de término</string>
+    <string name="contract_monthly_rent">Renta mensual</string>
+    <string name="contract_deposit">Depósito</string>
+    <string name="contract_notes">Notas</string>
+    <string name="contract_period">Del %1$s al %2$s</string>
+    <string name="contract_days_remaining">%d días restantes</string>
+    <string name="contract_expired">Vencido</string>
+    <string name="contract_active">Activo</string>
+    <string name="contract_inactive">Inactivo</string>
+    <string name="contract_filter_active">Activos</string>
+    <string name="contract_filter_all">Todos</string>
+    <string name="contract_filter_expired">Vencidos</string>
+    <string name="contract_payments_section">Pagos del Contrato</string>
+    <string name="contract_add_payment">Registrar Pago</string>
+    <string name="contract_total_paid">Total pagado</string>
+    <string name="contract_delete_confirm">¿Eliminar este contrato?</string>
+    <string name="contract_tenant_info">Inquilino: %s</string>
+    <string name="contract_property_info">Propiedad: %s</string>
+
+    <!-- Payments -->
+    <string name="payments_title">Pagos</string>
+    <string name="payment_add">Registrar Pago</string>
+    <string name="payment_edit">Editar Pago</string>
+    <string name="payment_contract">Contrato</string>
+    <string name="payment_amount">Monto</string>
+    <string name="payment_date">Fecha de pago</string>
+    <string name="payment_period">Período</string>
+    <string name="payment_month">Mes</string>
+    <string name="payment_year">Año</string>
+    <string name="payment_method">Método de pago</string>
+    <string name="payment_receipt">Número de recibo</string>
+    <string name="payment_notes">Notas</string>
+    <string name="payment_late">Pago con retraso</string>
+    <string name="payment_on_time">A tiempo</string>
+    <string name="payment_total_period">Total del período</string>
+    <string name="payment_empty">Sin pagos registrados</string>
+    <string name="payment_delete_confirm">¿Eliminar este pago?</string>
+    <string name="payment_method_cash">Efectivo</string>
+    <string name="payment_method_transfer">Transferencia</string>
+    <string name="payment_method_check">Cheque</string>
+    <string name="payment_method_card">Tarjeta</string>
+
+    <!-- Maintenance -->
+    <string name="maintenance_title">Mantenimiento</string>
+    <string name="maintenance_add">Nueva Solicitud</string>
+    <string name="maintenance_edit">Editar Solicitud</string>
+    <string name="maintenance_request_title">Título</string>
+    <string name="maintenance_description">Descripción</string>
+    <string name="maintenance_property">Propiedad</string>
+    <string name="maintenance_status">Estatus</string>
+    <string name="maintenance_priority">Prioridad</string>
+    <string name="maintenance_reported_date">Fecha reportado</string>
+    <string name="maintenance_resolved_date">Fecha resuelto</string>
+    <string name="maintenance_estimated_cost">Costo estimado</string>
+    <string name="maintenance_actual_cost">Costo real</string>
+    <string name="maintenance_technician">Técnico</string>
+    <string name="maintenance_notes">Notas</string>
+    <string name="maintenance_filter_all">Todos</string>
+    <string name="maintenance_filter_pending">Pendiente</string>
+    <string name="maintenance_filter_in_progress">En Progreso</string>
+    <string name="maintenance_filter_completed">Completado</string>
+    <string name="maintenance_empty">Sin solicitudes de mantenimiento</string>
+    <string name="maintenance_delete_confirm">¿Eliminar esta solicitud?</string>
+    <string name="maintenance_mark_complete">Marcar como completado</string>
+
+    <!-- Delete blocked dialogs -->
+    <string name="delete_blocked_title">No se puede eliminar</string>
+    <string name="delete_blocked_property_msg">Esta propiedad tiene %d contrato(s) asociado(s). Elimina los contratos primero.</string>
+    <string name="delete_blocked_tenant_msg">Este inquilino tiene %d contrato(s) asociado(s). Elimina los contratos primero.</string>
+    <string name="ok">Entendido</string>
+
+    <!-- Guided navigation dialogs -->
+    <string name="dialog_no_properties_title">Sin propiedades registradas</string>
+    <string name="dialog_no_properties_msg">Para continuar necesitas al menos una propiedad. ¿Deseas registrar una ahora?</string>
+    <string name="dialog_no_tenants_title">Sin inquilinos registrados</string>
+    <string name="dialog_no_tenants_msg">Para crear un contrato necesitas al menos un inquilino. ¿Deseas registrar uno ahora?</string>
+    <string name="dialog_no_contracts_title">Sin contratos activos</string>
+    <string name="dialog_no_contracts_msg">Para registrar un pago necesitas un contrato activo. ¿Deseas ir a la sección de contratos?</string>
+    <string name="dialog_btn_register_property">Registrar propiedad</string>
+    <string name="dialog_btn_register_tenant">Registrar inquilino</string>
+    <string name="dialog_btn_see_contracts">Ver contratos</string>
+
+    <!-- Common -->
+    <string name="save">Guardar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="delete">Eliminar</string>
+    <string name="edit">Editar</string>
+    <string name="yes">Sí</string>
+    <string name="no">No</string>
+    <string name="select_date">Seleccionar fecha</string>
+    <string name="select_option">Seleccionar…</string>
+    <string name="required_field">Campo requerido</string>
+    <string name="invalid_amount">Monto inválido</string>
+    <string name="invalid_end_date">La fecha de término debe ser posterior a la fecha de inicio</string>
+    <string name="property_already_rented">Esta propiedad ya tiene un contrato activo</string>
+    <string name="payment_duplicate_period">Ya existe un pago para este contrato en ese mes y año</string>
+    <string name="amount_must_be_positive">El monto debe ser mayor a 0</string>
+    <string name="amount_must_be_nonnegative">El monto no puede ser negativo</string>
+    <string name="future_date_not_allowed">No se permite una fecha futura</string>
+    <string name="year_out_of_range">Año fuera de rango (2000–%d)</string>
+    <string name="invalid_email">Correo electrónico inválido</string>
+    <string name="contract_delete_warn_payments">Este contrato tiene %d pago(s) asociado(s) que también se eliminarán.</string>
+    <string name="property_delete_warn_maintenance">Esta propiedad tiene %d mantenimiento(s) que también se eliminarán.</string>
+    <string name="payment_hint_long_press">Toca para editar · Mantén pulsado para eliminar</string>
+
+    <!-- Success/error snackbars -->
+    <string name="msg_property_saved">Propiedad guardada</string>
+    <string name="msg_tenant_saved">Inquilino guardado</string>
+    <string name="msg_contract_saved">Contrato guardado</string>
+    <string name="msg_payment_saved">Pago guardado</string>
+    <string name="msg_maintenance_saved">Mantenimiento guardado</string>
+    <string name="msg_property_deleted">Propiedad eliminada</string>
+    <string name="msg_tenant_deleted">Inquilino eliminado</string>
+    <string name="msg_contract_deleted">Contrato eliminado</string>
+    <string name="msg_payment_deleted">Pago eliminado</string>
+    <string name="msg_maintenance_deleted">Mantenimiento eliminado</string>
+    <string name="msg_save_error">No se pudo guardar. Inténtalo de nuevo.</string>
+
+    <!-- Discard changes -->
+    <string name="discard_changes_title">¿Descartar cambios?</string>
+    <string name="discard_changes_msg">Los datos que escribiste se perderán.</string>
+    <string name="btn_discard">Descartar</string>
+    <string name="btn_keep_editing">Continuar editando</string>
+
+    <!-- Mark complete confirmation -->
+    <string name="confirm_mark_complete_title">Marcar como completado</string>
+    <string name="confirm_mark_complete_msg">¿Confirmas que este mantenimiento está terminado? Se registrará la fecha de hoy.</string>
+    <string name="msg_maintenance_completed">Mantenimiento marcado como completado</string>
+    <string name="prev_month_cd">Mes anterior</string>
+    <string name="next_month_cd">Mes siguiente</string>
+    <string name="confirm_delete">Confirmar eliminación</string>
+    <string name="action_cannot_undone">Esta acción no se puede deshacer.</string>
+    <string name="currency_hint">0.00</string>
+    <string name="tenant_renting">Inquilino: %s</string>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/dashboardFragment"
+        android:icon="@drawable/ic_nav_dashboard"
+        android:title="@string/nav_dashboard" />
+    <item
+        android:id="@+id/propertyListFragment"
+        android:icon="@drawable/ic_nav_properties"
+        android:title="@string/nav_properties" />
+    <item
+        android:id="@+id/tenantListFragment"
+        android:icon="@drawable/ic_nav_tenants"
+        android:title="@string/nav_tenants" />
+    <item
+        android:id="@+id/paymentListFragment"
+        android:icon="@drawable/ic_nav_payments"
+        android:title="@string/nav_payments" />
+    <item
+        android:id="@+id/maintenanceListFragment"
+        android:icon="@drawable/ic_nav_maintenance"
+        android:title="@string/nav_maintenance" />
+</menu>
